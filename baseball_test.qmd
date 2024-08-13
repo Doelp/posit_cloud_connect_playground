@@ -1,0 +1,24 @@
+---
+title: "Cloud Test"
+format: dashboard
+---
+
+
+```{r}
+library(Lahman)
+library(tidyverse)
+library(tidymodels)
+
+batting_tibble <- Batting
+
+```
+
+
+```{r}
+
+ggplot(batting_tibble, aes(x = AB, y = R)) + 
+    geom_point() +
+    geom_smooth() +
+    ggtitle("Baseball Test | Runs vs At Bats", "Lahman Dataset")
+
+```
