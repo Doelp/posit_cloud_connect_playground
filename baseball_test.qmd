@@ -16,9 +16,10 @@ batting_tibble <- Batting
 
 ```{r}
 
-ggplot(batting_tibble, aes(x = AB, y = R)) + 
+ggplot(batting_tibble, aes(x = AB, y = R, color = yearID)) + 
     geom_point() +
-    geom_smooth() +
-    ggtitle("Baseball Test | Runs vs At Bats", "Lahman Dataset")
+    geom_smooth(color = "red") +
+    ggtitle("Baseball Test | Runs vs At Bats", "Lahman Dataset") +
+    theme_bw()
 
 ```
