@@ -7,7 +7,7 @@ format: dashboard
 ```{r}
 library(Lahman)
 library(tidyverse)
-library(tidymodels)
+# library(tidymodels)
 
 batting_tibble <- Batting
 
